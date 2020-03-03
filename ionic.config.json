@@ -1,7 +1,5 @@
 {
-  "name": "shoppingcart",
-  "integrations": {
-    "cordova": {}
-  },
+  "name": "ionic5shopping",
+  "integrations": {},
   "type": "angular"
 }
