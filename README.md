@@ -18,6 +18,8 @@ npm install --save @ionic-native/stripe@4
   this.stripe.setPublishableKey('pk_test_xxxxxxxxxxx');
 ```
 
+## Preview 
+
 ![Ionic 5 shopping cart using stripe payment](/screenshot/screenshot.png)
 
 
