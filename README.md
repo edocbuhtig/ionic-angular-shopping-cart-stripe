@@ -7,7 +7,7 @@ Clone and run npm install, If you wish to update to the latest Ionic **delete** 
 npm install @ionic/angular@latest @ionic/angular-toolkit@latest --save
 ```
 
-## Install the Strip cordova plugin 
+## Install the Stripe (cordova) plugin not for Capacitor 
 
 ```
 ionic cordova plugin add cordova-plugin-stripe
