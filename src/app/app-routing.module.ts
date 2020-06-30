@@ -2,11 +2,23 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
-  { path: 'cartpopup', loadChildren: './ui/cartpopup/cartpopup.module#CartpopupPageModule' },   { path: 'cartview', loadChildren: './cartview/cartview.module#CartviewPageModule' },
-  { path: 'payments', loadChildren: './payments/payments.module#PaymentsPageModule' },
-
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'cartview',
+    loadChildren: () => import('./cartview/cartview.module').then( m => m.CartviewPageModule)
+  },
+  {
+    path: 'payments',
+    loadChildren: () => import('./payments/payments.module').then( m => m.PaymentsPageModule)
+  },
   
 ];
 

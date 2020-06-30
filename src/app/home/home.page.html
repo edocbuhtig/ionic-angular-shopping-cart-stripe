@@ -1,6 +1,5 @@
-<ion-header>
-  <ion-toolbar color="danger">
-
+<ion-header [translucent]="true">
+  <ion-toolbar>
     <ion-title>
       Game Shop Online
     </ion-title>
@@ -9,12 +8,10 @@
       {{ cartItemCount | async }}
       <ion-icon name="cart" slot="end"></ion-icon>
     </ion-button>
-
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true">
   <ion-list>
     <ion-card *ngFor="let item of products">
         <ion-card-header>
@@ -37,4 +34,6 @@
         </ion-card-content>
     </ion-card>
   </ion-list>
+
+  
 </ion-content>

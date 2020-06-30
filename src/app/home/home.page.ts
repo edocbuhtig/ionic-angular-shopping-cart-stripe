@@ -57,4 +57,5 @@ export class HomePage {
     }
     node.addEventListener('animationend', handleAnimationEnd)
   }
+
 }
