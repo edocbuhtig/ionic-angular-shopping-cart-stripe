@@ -1,5 +1,5 @@
 
-### Ionic 5 shopping cart using stripe payment 
+### Ionic 5 Angular Shopping Cart with Stripe payment 
 
 Clone and run npm install, If you wish to update to the latest Ionic **delete** the `node_modules` and run below,
 
@@ -11,7 +11,7 @@ npm install @ionic/angular@latest @ionic/angular-toolkit@latest --save
 
 ```
 ionic cordova plugin add cordova-plugin-stripe
-npm install --save @ionic-native/stripe@4
+npm install --save @ionic-native/stripe
 ```
 
 ## Stripe (Test) Key
@@ -24,6 +24,6 @@ npm install --save @ionic-native/stripe@4
 
 ## Preview 
 
-![Ionic 5 shopping cart using stripe payment](/screenshot/screenshot.png)
+![Ionic 5 Angular Shopping Cart with Stripe payment](/screenshot/screenshot.png)
 
 
