@@ -15,7 +15,7 @@
  
     <div class="ion-padding">
    
-      <ion-list>
+      <ion-list *ngIf="cart.length > 0">
         <ion-item *ngFor="let p of cart" class="ion-text-wrap">
           <ion-grid>
             <ion-row class="ion-align-items-center">
@@ -65,9 +65,13 @@
         </ion-item>
       </ion-list>
    
-      <ion-button expand="full" color="dark" (click)="carddetails()">
+      <ion-button expand="full" color="dark" (click)="carddetails()" *ngIf="cart.length > 0">
         Pay Now
       </ion-button>
+
+      <ion-list *ngIf="cart.length === 0">
+        <ion-item>You cart is empty.</ion-item>
+      </ion-list>
     </div>
    
   </ion-content>
