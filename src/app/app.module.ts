@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Stripe } from '@ionic-native/stripe/ngx';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -20,8 +18,6 @@ import { AppRoutingModule } from './app-routing.module';
     IonicModule.forRoot(), 
     AppRoutingModule],
   providers: [
-    StatusBar,
-    SplashScreen,
     Stripe,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
