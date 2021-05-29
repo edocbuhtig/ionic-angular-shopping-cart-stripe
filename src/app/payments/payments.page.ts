@@ -8,6 +8,7 @@ import { Stripe } from '@ionic-native/stripe/ngx';
 
 
 
+
 @Component({
   selector: 'app-payments',
   templateUrl: './payments.page.html',

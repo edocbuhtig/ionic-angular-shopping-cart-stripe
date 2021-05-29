@@ -1,3 +1,6 @@
 node_modules
 resources
 plugins
+www
+.DS_Store
+src/.DS_Store
